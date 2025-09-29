@@ -13,8 +13,8 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
       <div class="pdf-header">
         <h3 class="pdf-title">{{ title }}</h3>
       </div>
-      
-      <ngx-extended-pdf-viewer 
+
+      <ngx-extended-pdf-viewer
         [src]="pdfUrl"
         [height]="height"
         [useBrowserLocale]="true"
@@ -71,7 +71,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
   `]
 })
 export class PdfComponent {
-  @Input() pdfUrl: string = '/assets/tutorial_alvara_coletivo.pdf';
+  @Input() pdfUrl: string = 'assets/tutorial_alvara_coletivo.pdf';
   @Input() title: string = 'Tutorial de Alvará Coletivo';
   @Input() height: string = '90vh';
   @Input() downloadFilename: string = 'documento.pdf';
