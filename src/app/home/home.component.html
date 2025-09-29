@@ -1,0 +1,93 @@
+<div class="page-container">
+    <header class="app-header">
+        <div class="header-content">
+            <img src="/assets/pref_branco.svg" width="150" height="60"/>
+            <div class="separator"></div>
+            <h1 class="header-title">
+                <p>
+                    SECRETARIA MUNICIPAL DE <br>
+                    DESENVOLVIMENTO URBANO
+                </p>
+
+            </h1>
+        </div>
+
+    </header>
+
+    <nav class="sub-nav">
+        <div class="nav-header">
+            <button class="menu-toggle" (click)="toggleMenu()">
+                <p> ☰ Lista de Tutoriais </p>
+            </button>
+        </div>
+
+        <div class="nav-container" [class.open]="menuOpen">
+            <a href="#alvara-coletivo" class="nav-item" (click)="scrollToSection($event, 'alvara-coletivo')">Solicitação de Alvará Coletivo</a>
+            <a href="#alvara-construcao" class="nav-item" (click)="scrollToSection($event, 'alvara-construcao')">Solicitação de Alvará de Construção</a>
+            <a href="#habitese" class="nav-item" (click)="scrollToSection($event, 'habitese')">Solicitação de Habite-se</a>
+            <a href="#usuario" class="nav-item" (click)="scrollToSection($event, 'usuario')">Criação de Usuário</a>
+            <a href="#autorizacaoacesso" class="nav-item" (click)="scrollToSection($event, 'autorizacaoacesso')">Autorização de Acesso</a>
+            <a href="https://www.seadmdmi.feiradesantana.ba.gov.br/feiralegal/" target="_blank" class="nav-item ">Acesse o sistema Feira Legal</a>
+        </div>
+    </nav>
+
+    <section class="headline">
+        <div class="new">
+            <span>
+                SEDUR
+            </span>
+            <h1>Tutoriais do Sistema Feira Legal</h1>
+            <p>Caso tenham dúvidas ou precisem de auxílio, nossa equipe está à disposição.</p>
+        </div>
+    </section>
+
+    <section class="content-section section-title" id="alvara-coletivo">
+        <h2 class="section-title">Solicitação de Alvará Coletivo</h2>
+        <p>🔗 <a href="http://seadmdmi.feiradesantana.ba.gov.br/feiralegal_tutoriais/arquivos/coletivo.pdf" target="_blank">Clique aqui para abrir o PDF</a></p>
+        <app-pdf
+            pdfUrl="/assets/tutorial_alvara_coletivo.pdf"
+            title=""
+            height="90vh"
+            downloadFilename="tutorial_alvara_coletivo.pdf">
+        </app-pdf>
+    </section>
+
+    <section class="video-container">
+
+        <div class="video-item" id="alvara-construcao">
+            <h3>Solicitação de Alvará de Construção</h3>
+            <p>🔗 <a href="https://youtu.be/2dodFGUS-6s" target="_blank">Clique aqui para assistir direto no Youtube</a></p>
+            <iframe src="https://www.youtube.com/embed/2dodFGUS-6s" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-item" id="habitese">
+            <h3>Solicitação de Habite-se</h3>
+            <p>🔗 <a href="https://youtu.be/iG3a4R_lrns?si=i8t1x6iT2hsfwP29" target="_blank">Clique aqui para assistir direto no Youtube</a></p>
+            <iframe src="https://www.youtube.com/embed/iG3a4R_lrns?si=i8t1x6iT2hsfwP29" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-item" id="usuario">
+            <h3>Criação de Usuário</h3>
+            <p>🔗 <a href="https://youtu.be/WOtAgh3DK54?si=jVl2eZoAxgPX898Y" target="_blank">Clique aqui para assistir direto no Youtube</a></p>
+            <iframe src="https://www.youtube.com/embed/WOtAgh3DK54?si=HPr3JEckPh3WAmW_" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-item" id="autorizacaoacesso">
+            <h3>Autorização de Acesso</h3>
+            <p>🔗 <a href="https://youtu.be/bpLj_8qKaOM?si=PF9WOT5q_0t5bUaR" target="_blank">Clique aqui para assistir direto no Youtube</a></p>
+            <iframe src="https://www.youtube.com/embed/bpLj_8qKaOM?si=PF9WOT5q_0t5bUaR"  frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+
+
+    </section>
+
+    <button class="back-to-top" *ngIf="showButton" (click)="scrollToTop()">
+        ⬆
+    </button>
+
+    <footer class="footer">
+        &copy; 2025
+    </footer>
+</div>
