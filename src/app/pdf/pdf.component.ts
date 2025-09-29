@@ -35,7 +35,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
         [showSpreadButton]="false"
         [showPropertiesButton]="true"
         [zoom]="'auto'"
-        [filenameForDownload]="'tutorial_alvara_coletivo.pdf'"
+        [filenameForDownload]="downloadFilename"
         delayFirstView="1000"
         [backgroundColor]="'#ffffff'">
       </ngx-extended-pdf-viewer>
