@@ -1,6 +1,6 @@
 # SPA para Tutoriais
 
-Este projeto é uma Single-Page Application (SPA) desenvolvida em Angular. O objetivo principal é centralizar e facilitar o acesso a tutoriais sobre o uso do sistema "Feira Legal", auxiliando cidadãos e profissionais a realizarem procedimentos como solicitação de alvarás, habite-se e gestão de usuários.
+This project is a Single-Page Application (SPA) developed in Angular for SEDUR of Feira de Santana. The main objective is to centralize and facilitate access to tutorials on using the "Feira Legal" system, helping citizens and professionals to carry out procedures such as requesting permits, certificates of occupancy, and user management.
 
 ## 🚀 Tecnologias Utilizadas
 
